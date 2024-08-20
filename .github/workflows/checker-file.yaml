@@ -1,0 +1,14 @@
+name: 'Test File 1'
+
+on:
+  pull_request:
+    paths:
+      - 'file1.txt'
+
+jobs:
+  check-code-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check code
+        id: check-code
+        run: echo "check code"

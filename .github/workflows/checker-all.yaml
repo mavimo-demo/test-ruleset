@@ -1,0 +1,12 @@
+name: 'Test all'
+
+on:
+  pull_request:
+
+jobs:
+  check-code-all:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check code
+        id: check-code
+        run: echo "check code"
